@@ -4,6 +4,6 @@
 
 @layer base {
   * {
-    @apply box-border overflow-hidden;
+    @apply box-border;
   }
 }
