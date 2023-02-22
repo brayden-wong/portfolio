@@ -32,12 +32,13 @@ export const AboutText = () => {
         <p>
           My favorite technologies to use in my personal projects are:{' '}
           <span className="font-medium italic text-teal-400/80">
-            Typescript, NestJs, React, TRPC, NextJs, TailwindCss, and Prisma{' '}
+            Typescript, NestJs, React, TRPC, NextJs, TailwindCss, and Prisma
           </span>
         </p>
         <p>
-          I have worked with the following databases:{' '}
+          I have worked with the following databases:
           <span className="font-medium italic text-teal-400/80">
+            {' '}
             Redis, Postgres, MySQL, MongoDB, and Firebase
           </span>
         </p>
