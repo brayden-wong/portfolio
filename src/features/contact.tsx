@@ -3,7 +3,7 @@ import {
   MapPinIcon,
   PhoneIcon,
 } from '@heroicons/react/24/outline';
-import { useForm, SubmitHandler } from 'react-hook-form';
+import { useForm, type SubmitHandler } from 'react-hook-form';
 
 interface Inputs {
   name: string;
@@ -13,9 +13,7 @@ interface Inputs {
   message: string;
 }
 
-interface Props {}
-
-export const Contact = ({}: Props) => {
+export const Contact = () => {
   const { register, handleSubmit } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
@@ -34,7 +32,7 @@ export const Contact = ({}: Props) => {
       <div className="flex flex-col space-y-10">
         <h4 className=" text-center text-4xl font-semibold">
           I have got just what you need.{' '}
-          <span className="underline decoration-teal-400">Let's Talk</span>
+          <span className="underline decoration-teal-400">Let&apos;s Talk</span>
         </h4>
 
         <div className="flex flex-col items-start space-y-10">
@@ -55,7 +53,7 @@ export const Contact = ({}: Props) => {
         </div>
 
         <form
-          onSubmit={handleSubmit(onSubmit)}
+          onSubmit={void handleSubmit(onSubmit)}
           className="flex w-[105%] -translate-x-[2.5%] flex-col justify-center space-y-2"
         >
           <div className="flex space-x-1.5">

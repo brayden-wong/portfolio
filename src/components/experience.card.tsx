@@ -33,7 +33,7 @@ export const ExperienceCard = ({ image, tech, title, summary }: Props) => {
       <h4 className="text-4xl underline decoration-teal-400">{title}</h4>
       <div className="my-2 flex justify-center space-x-2">
         {tech.map((skill) => (
-          <span>{skill}</span>
+          <span key={skill}>{skill}</span>
         ))}
       </div>
 

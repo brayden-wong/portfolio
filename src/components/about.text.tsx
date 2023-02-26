@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export const AboutText = () => {
   return (
     <div className="flex flex-col space-y-8 ">

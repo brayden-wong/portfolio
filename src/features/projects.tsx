@@ -1,4 +1,3 @@
-import { AnimatePresence, motion } from 'framer-motion';
 import { PROJECTS } from '~/constants';
 
 export const Projects = () => {
@@ -11,6 +10,7 @@ export const Projects = () => {
       <div className="relative flex w-full flex-row overflow-x-scroll">
         {PROJECTS.map((project) => (
           <div
+            key={project.title}
             className="flex h-screen w-screen flex-shrink-0 snap-center flex-col items-center justify-center space-y-5 
             p-20 md:p-44"
           >

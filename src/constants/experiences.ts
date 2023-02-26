@@ -9,7 +9,7 @@ export const EXPERIENCES = [
       "I was responsible for the development of the front-end of the platform, using Angular 8 and Typescript",
       "I also developed the back-end of the platform, using NodeJs and Firebase",
     ],
-    image: SpeechCloudIcon('w-16 h-16'),
+    image: SpeechCloudIcon(),
   },
   // {
   //   title: '1Speechcloud',

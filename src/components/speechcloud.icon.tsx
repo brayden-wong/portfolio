@@ -1,4 +1,4 @@
-export const SpeechCloudIcon = (className: string) => {
+export const SpeechCloudIcon = () => {
   return (
     <svg
       id="Group_1"
