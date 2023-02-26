@@ -36,7 +36,7 @@ export const Hero = () => {
         <div className="mt-4 space-x-8">
           <Link href="#about">
             <button
-              className="rounded border-2 px-2 py-2 text-sm uppercase
+              className="rounded border-2 border-transparent px-5 py-2 text-sm uppercase
               tracking-widest text-gray-500 transition-all hover:border-white"
             >
               About
@@ -44,7 +44,7 @@ export const Hero = () => {
           </Link>
           <Link href="#experience">
             <button
-              className="rounded border-2 px-2 py-2 text-sm uppercase
+              className="rounded border-2 border-transparent px-5 py-2 text-sm uppercase
               tracking-widest text-gray-500 transition-all hover:border-white"
             >
               Experience
@@ -52,7 +52,7 @@ export const Hero = () => {
           </Link>
           <Link href="#projects">
             <button
-              className="rounded border-2 px-2 py-2 text-sm uppercase
+              className="rounded border-2 border-transparent px-5 py-2 text-sm uppercase
               tracking-widest text-gray-500 transition-all hover:border-white"
             >
               Projects

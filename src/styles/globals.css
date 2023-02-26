@@ -7,3 +7,11 @@
     @apply box-border;
   }
 }
+
+@layer components {
+  .contact-input {
+    @apply w-full rounded border-2 border-[#242424] bg-slate-400/10 px-6 py-4 text-white
+    placeholder-gray-500 outline-none transition-all hover:border-teal-400/40 focus:border-teal-400/40
+    focus:text-[f7ab0a] md:px-12 xl:px-16;
+  }
+}

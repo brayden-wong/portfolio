@@ -8,7 +8,7 @@ export const About = () => {
       className="relative mx-auto flex h-screen max-w-7xl flex-col
       items-center justify-evenly px-10 text-center md:flex-row md:space-x-16 md:text-left"
     >
-      <h3 className="absolute top-24 text-3xl font-medium uppercase tracking-[20px] text-gray-500">
+      <h3 className="absolute top-24 text-3xl font-medium uppercase tracking-[20px] text-white">
         About
       </h3>
 
@@ -41,7 +41,7 @@ export const About = () => {
         viewport={{ once: true }}
         className="space-y-10 rounded-md border-[3px] border-white/40 bg-white text-white/90"
       >
-        <div className="rounded bg-black/90 px-2 py-4 backdrop-blur-md md:px-8">
+        <div className="space-y-4 rounded bg-black/90 px-2 py-4 backdrop-blur-md md:px-8">
           <h4 className="text-4xl font-semibold">
             Here is a{' '}
             <span className="underline decoration-teal-400/80 ">little</span>{' '}

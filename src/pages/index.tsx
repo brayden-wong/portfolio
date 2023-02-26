@@ -1,7 +1,7 @@
 import { type NextPage } from 'next';
 import Head from 'next/head';
 import { Nav } from '~/components';
-import { Hero, About } from '~/features';
+import { Hero, About, Experience, Projects, Contact } from '~/features';
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <title>Brayden Wong</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col bg-black">
+      <main className="flex flex-col items-center bg-black">
         <Nav />
 
         <section id="hero">
@@ -19,6 +19,18 @@ const Home: NextPage = () => {
 
         <section id="about">
           <About />
+        </section>
+
+        <section id="experiences">
+          <Experience />
+        </section>
+
+        <section id="projects">
+          <Projects />
+        </section>
+
+        <section id="contact">
+          <Contact />
         </section>
       </main>
     </>
