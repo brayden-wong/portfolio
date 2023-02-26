@@ -3,7 +3,7 @@ import {
   MapPinIcon,
   PhoneIcon,
 } from '@heroicons/react/24/outline';
-import { useForm, type SubmitHandler } from 'react-hook-form';
+import { useState } from 'react';
 
 interface Inputs {
   name: string;
@@ -14,10 +14,17 @@ interface Inputs {
 }
 
 export const Contact = () => {
-  const { register, handleSubmit } = useForm<Inputs>();
+  const [data, setData] = useState<Inputs>({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: '',
+  });
 
-  const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href = `mailto:braydenwong.code@gmail.com?subject=${formData.subject}&body=Hi my name is ${formData.name}. ${formData.message} ${formData.phone} ${formData.message}`;
+  const onSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    window.location.href = `mailto:braydenwong.code@gmail.com?subject=${data.subject}&body=Hi my name is ${data.name}. email: ${data.email} phone number: ${data.phone} ${data.message}`;
   };
 
   return (
@@ -53,42 +60,57 @@ export const Contact = () => {
         </div>
 
         <form
-          onSubmit={void handleSubmit(onSubmit)}
+          onSubmit={(e: React.FormEvent<HTMLFormElement>) => onSubmit(e)}
           className="flex w-[105%] -translate-x-[2.5%] flex-col justify-center space-y-2"
         >
           <div className="flex space-x-1.5">
             <input
-              {...register('name')}
               className="contact-input"
               placeholder="Name"
+              value={data.name}
+              onChange={(e) =>
+                setData((prev) => ({ ...prev, name: e.target.value }))
+              }
               type="text"
             />
             <input
-              {...register('email')}
               className="contact-input"
               placeholder="Email"
+              value={data.email}
+              onChange={(e) =>
+                setData((prev) => ({ ...prev, email: e.target.value }))
+              }
               type="email"
             />
           </div>
 
           <input
-            {...register('phone')}
             className="contact-input"
             placeholder="Phone Number"
+            value={data.phone}
+            onChange={(e) =>
+              setData((prev) => ({ ...prev, phone: e.target.value }))
+            }
             type="text"
           />
           <input
-            {...register('subject')}
             className="contact-input"
             placeholder="Subject"
+            value={data.subject}
+            onChange={(e) =>
+              setData((prev) => ({ ...prev, subject: e.target.value }))
+            }
             type="text"
           />
 
           <textarea
-            {...register('message')}
             className="contact-input resize-none"
             rows={4}
             placeholder="message"
+            value={data.message}
+            onChange={(e) =>
+              setData((prev) => ({ ...prev, message: e.target.value }))
+            }
           />
           <button
             className="rounded-md bg-teal-400 py-2 px-10 font-semibold text-black md:py-3"

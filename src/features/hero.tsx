@@ -9,7 +9,8 @@ export const Hero = () => {
     words: [
       "Hi, I'm Brayden Wong",
       "I'm a software engineer",
-      'I love building and innovating',
+      'I love to build things',
+      'I am a full stack developer',
     ],
     loop: true,
     delaySpeed: 2000,
@@ -42,12 +43,12 @@ export const Hero = () => {
               About
             </button>
           </Link>
-          <Link href="#experience">
+          <Link href="#experiences">
             <button
               className="rounded border-2 border-transparent px-5 py-2 text-sm uppercase
               tracking-widest text-gray-500 transition-all hover:border-white"
             >
-              Experience
+              Experiences
             </button>
           </Link>
           <Link href="#projects">
