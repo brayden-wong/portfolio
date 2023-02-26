@@ -21,7 +21,7 @@ export const About = () => {
           x: 0,
           opacity: 1,
         }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 1.5, ease: 'linear' }}
         viewport={{ once: true }}
         src={image.src}
         className="flex-shink-0 -mb-20 h-96 w-64 rounded-lg 
@@ -31,20 +31,24 @@ export const About = () => {
       <motion.div
         initial={{
           opacity: 0,
+          y: 100,
         }}
         whileInView={{
           opacity: 1,
+          y: 0,
         }}
-        transition={{ duration: 4 }}
+        transition={{ duration: 1.5, ease: 'linear' }}
         viewport={{ once: true }}
-        className="space-y-10 rounded-md border-[3px] border-white/40 bg-gray-400/10 px-2 py-4 text-white/90 md:px-8"
+        className="space-y-10 rounded-md border-[3px] border-white/40 bg-white text-white/90"
       >
-        <h4 className="text-4xl font-semibold">
-          Here is a{' '}
-          <span className="underline decoration-teal-400/80 ">little</span>{' '}
-          about me.
-        </h4>
-        <AboutText />
+        <div className="rounded bg-black/90 px-2 py-4 backdrop-blur-md md:px-8">
+          <h4 className="text-4xl font-semibold">
+            Here is a{' '}
+            <span className="underline decoration-teal-400/80 ">little</span>{' '}
+            about me.
+          </h4>
+          <AboutText />
+        </div>
       </motion.div>
     </div>
   );
