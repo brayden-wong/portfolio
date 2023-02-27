@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <title>Brayden Wong</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col items-center bg-black">
+      <main className="flex flex-col items-center overflow-x-hidden bg-black">
         <Nav />
 
         <section id="hero">
