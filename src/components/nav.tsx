@@ -1,5 +1,6 @@
 import { SocialIcon } from 'react-social-icons';
 import { EnvelopeIcon } from '@heroicons/react/24/solid';
+import Link from 'next/link';
 
 const SOCIAL_STYLES = { width: 36, height: 36 };
 
@@ -17,10 +18,10 @@ export const Nav = () => {
           url="https://www.github.com/brayden-wong"
         />
       </div>
-      <div className="flex cursor-pointer items-center space-x-2">
+      <Link href='#contact' className="flex cursor-pointer items-center space-x-2">
         <EnvelopeIcon className="h-8 w-8" />
         <p className="opacity-0 duration-300 sm:opacity-100">Get in touch</p>
-      </div>
+      </Link>
     </nav>
   );
 };
