@@ -7,7 +7,7 @@ export const Projects = () => {
         Projects
       </h3>
 
-      <div className="relative flex w-full flex-row overflow-x-scroll">
+      <div className="relative flex w-full flex-row">
         {PROJECTS.map((project) => (
           <div
             key={project.title}
