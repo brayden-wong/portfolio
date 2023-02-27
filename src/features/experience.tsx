@@ -14,7 +14,7 @@ export const Experience = () => {
         Experiences
       </h3>
 
-      <div className="flex w-full justify-center space-x-5 overflow-x-scroll p-10">
+      <div className="flex w-full justify-center space-x-5 p-10">
         {EXPERIENCES.map((experience) => (
           <ExperienceCard
             key={experience.title}
