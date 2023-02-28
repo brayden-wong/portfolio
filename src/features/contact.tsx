@@ -22,6 +22,26 @@ export const Contact = () => {
     message: '',
   });
 
+  const normalizeInput = (value: string, previousValue: string) => {
+    if (!value) return '';
+
+    const currentValue = value.replace(/[^\d]/g, '');
+    const cvLength = currentValue.length;
+
+    if (!previousValue || value.length > previousValue.length) {
+      if (cvLength < 4) return currentValue;
+
+      if (cvLength < 7)
+        return `(${currentValue.slice(0, 3)})${currentValue.slice(3)}`;
+
+      return `(${currentValue.slice(0, 3)})${currentValue.slice(
+        3,
+        6
+      )}-${currentValue.slice(6, 10)}`;
+    }
+    return '';
+  };
+
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     window.location.href = `mailto:braydenlwong@gmail.com?subject=${data.subject}&body=Hi my name is ${data.name}. email: ${data.email} phone number: ${data.phone} ${data.message}`;
@@ -109,7 +129,10 @@ export const Contact = () => {
             placeholder="Phone Number"
             value={data.phone}
             onChange={(e) =>
-              setData((prev) => ({ ...prev, phone: e.target.value }))
+              setData((prev) => ({
+                ...prev,
+                phone: normalizeInput(e.target.value, data.phone),
+              }))
             }
             type="text"
           />
