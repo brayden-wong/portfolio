@@ -41,7 +41,7 @@ export const About = () => {
         viewport={{ once: true }}
         className="space-y-10 rounded-md border-[3px] border-white/40 bg-white text-white/90"
       >
-        <div className="space-y-4 rounded bg-black/90 px-4 py-5 backdrop-blur-md md:px-8">
+        <div className="space-y-4 overflow-hidden rounded bg-black/90 px-4 py-5 md:px-8">
           <h4 className="relative left-2 py-1.5 text-left text-2xl font-semibold sm:text-3xl">
             Here is a{' '}
             <span className="underline decoration-teal-400/80">little</span>{' '}
