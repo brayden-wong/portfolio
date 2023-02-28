@@ -32,7 +32,7 @@ export const Contact = () => {
       className="relative flex h-screen max-w-7xl flex-col items-center
       justify-evenly px-4 text-center text-white sm:px-10 md:flex-row md:text-left"
     >
-      <h3 className="absolute top-4 py-1.5 text-2xl uppercase tracking-[20px] text-gray-500 md:top-24">
+      <h3 className="absolute top-4 py-2 text-2xl uppercase tracking-[20px] text-gray-500 md:top-24">
         Contact
       </h3>
 
