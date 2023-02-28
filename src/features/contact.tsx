@@ -127,6 +127,7 @@ export const Contact = () => {
           <input
             className="contact-input"
             placeholder="Phone Number"
+            pattern="\d*"
             value={data.phone}
             onChange={(e) =>
               setData((prev) => ({
