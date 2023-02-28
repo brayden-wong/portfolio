@@ -14,7 +14,7 @@ export const ProjectCard = ({ title, summary }: Props) => {
     >
       <div className="w-full max-w-6xl space-y-10 p-4 text-white sm:px-4 md:px-12 md:py-4">
         <motion.img />
-        <h4 className="p py-0.5 text-center text-4xl underline decoration-teal-400">
+        <h4 className="py-1.5 text-center text-4xl underline decoration-teal-400">
           {title}
         </h4>
         <p className="text-lg">{summary}</p>

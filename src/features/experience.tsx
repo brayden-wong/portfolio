@@ -10,7 +10,7 @@ export const Experience = () => {
       transition={{ duration: 1.5, ease: 'linear' }}
       className="relative flex h-screen w-screen max-w-full flex-col items-center justify-evenly overflow-hidden md:flex-row"
     >
-      <h3 className="absolute top-4 text-3xl font-medium uppercase tracking-[12px] text-white md:top-24 md:tracking-[20px]">
+      <h3 className="absolute top-4 py-1.5 text-3xl font-medium uppercase tracking-[12px] text-white md:top-24 md:tracking-[20px]">
         Experiences
       </h3>
 

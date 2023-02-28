@@ -8,7 +8,7 @@ export const About = () => {
       className="relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-center space-y-4
         px-4 text-center md:flex-row md:justify-evenly md:space-y-0 md:space-x-16 md:px-10 md:text-left"
     >
-      <h3 className="relative top-2 text-3xl font-medium uppercase tracking-[20px] text-white md:absolute md:top-24">
+      <h3 className="relative top-2 py-1.5 text-3xl font-medium uppercase tracking-[20px] text-white md:absolute md:top-24">
         About
       </h3>
 
@@ -42,7 +42,7 @@ export const About = () => {
         className="space-y-10 rounded-md border-[3px] border-white/40 bg-white text-white/90"
       >
         <div className="space-y-4 rounded bg-black/90 px-4 py-5 backdrop-blur-md md:px-8">
-          <h4 className="relative left-2 text-left text-2xl font-semibold sm:text-3xl">
+          <h4 className="relative left-2 py-1.5 text-left text-2xl font-semibold sm:text-3xl">
             Here is a{' '}
             <span className="underline decoration-teal-400/80">little</span>{' '}
             about me.

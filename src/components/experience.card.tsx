@@ -32,7 +32,7 @@ export const ExperienceCard = ({ image, tech, title, summary }: Props) => {
         {image}
       </motion.div>
 
-      <h4 className="px-4 py-0.5 text-4xl underline decoration-teal-400">
+      <h4 className="px-4 py-1.5 text-4xl underline decoration-teal-400">
         <Link href={'https://speechcloud.com'}>{title}</Link>
       </h4>
       <div className="my-2 flex items-center justify-center space-x-2">
