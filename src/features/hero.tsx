@@ -5,7 +5,7 @@ import profile from '../../public/assets/profile.png';
 import { BackgroundCirclesMd, BackgroundCircles } from '../components';
 
 export const Hero = () => {
-  const [text, count] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
       "Hi, I'm Brayden Wong",
       "I'm a software engineer",

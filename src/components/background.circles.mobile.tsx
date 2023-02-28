@@ -30,20 +30,3 @@ export const BackgroundCircles = () => {
     </motion.div>
   );
 };
-
-const example = () => {
-  return (
-    <>
-      <div
-        className="absolute mb-36 h-[200px] w-[200px] animate-ping rounded-full border-2
-      border-[#333333]"
-      />
-      <div className="absolute mb-36 h-[300px] w-[300px] rounded-full border-2 border-[#333333]" />
-      <div className="absolute mb-36 h-[500px] w-[500px] rounded-full border-2 border-[#333333]" />
-      <div
-        className="absolute mb-36 h-[650px] w-[650px] animate-pulse rounded-full border-2 border-teal-500
-        opacity-20"
-      />
-    </>
-  );
-};

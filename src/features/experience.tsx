@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ExperienceCard } from '~/components/experience.card';
 import { EXPERIENCES } from '~/constants';
 

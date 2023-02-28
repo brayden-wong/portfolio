@@ -26,6 +26,7 @@ export const ExperienceCard = ({ image, tech, title, summary }: Props) => {
         }}
         viewport={{ once: true }}
         transition={{ duration: 1.2 }}
+        key={title}
         className="flex h-24 w-24 items-center justify-center"
       >
         {image}
@@ -43,10 +44,8 @@ export const ExperienceCard = ({ image, tech, title, summary }: Props) => {
               </p>
             );
           return (
-            <div className="flex items-center space-x-2">
-              <p key={skill} className="text-sm font-bold text-teal-400">
-                {skill}
-              </p>
+            <div key={skill} className="flex items-center space-x-2">
+              <p className="text-sm font-bold text-teal-400">{skill}</p>
               <span>•</span>
             </div>
           );
