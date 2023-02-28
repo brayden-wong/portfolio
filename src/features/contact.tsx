@@ -79,8 +79,8 @@ export const Contact = () => {
           </div>
         </div>
 
-        <form
-          onSubmit={(e: React.FormEvent<HTMLFormElement>) => onSubmit(e)}
+        <div
+          // ={(e: React.FormEvent<HTMLFormElement>) => onSubmit(e)
           className="flex flex-col justify-center space-y-2 sm:w-full"
         >
           <div className="hidden sm:flex sm:space-x-1.5">
@@ -159,10 +159,11 @@ export const Contact = () => {
           <button
             className="rounded-md bg-teal-400 py-2 px-10 font-semibold text-black md:py-3"
             type="submit"
+            onClick={(e) => onSubmit(e)}
           >
             Submit
           </button>
-        </form>
+        </div>
       </div>
     </div>
   );
