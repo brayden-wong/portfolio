@@ -2,7 +2,7 @@ import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import Image from 'next/image';
 import Link from 'next/link';
 import profile from '../../public/assets/profile.png';
-import { BackgroundCircles } from '../components';
+import { BackgroundCirclesMd, BackgroundCircles } from '../components';
 
 export const Hero = () => {
   const [text, count] = useTypewriter({
@@ -17,7 +17,8 @@ export const Hero = () => {
   });
 
   return (
-    <div className="flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden text-center">
+    <div className="flex h-screen flex-col items-center justify-center space-y-8 text-center">
+      <BackgroundCirclesMd />
       <BackgroundCircles />
       <Image
         src={profile}
@@ -27,14 +28,14 @@ export const Hero = () => {
         alt="Brayden Wong"
       />
       <div className="z-20 w-full text-center">
-        <h2 className="pb-2 text-sm uppercase tracking-[15px] text-gray-500">
+        <h2 className="pb-2 text-sm uppercase tracking-[12px] text-gray-500">
           Software Engineer
         </h2>
-        <h1 className="lg:-text-6xl py-1 px-10 text-5xl font-semibold">
+        <h1 className="h-32 py-1 px-10 text-5xl font-semibold lg:text-6xl">
           <span className="text-white">{text}</span>
           <Cursor cursorBlinking={true} cursorColor="#f5f5f5" />
         </h1>
-        <div className="mt-4 space-x-8">
+        <div className="flex justify-center space-x-4">
           <Link href="#about">
             <button
               className="rounded border-2 border-transparent px-5 py-2 text-sm uppercase

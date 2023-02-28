@@ -1,6 +1,6 @@
 export const AboutText = () => {
   return (
-    <div className="flex flex-col space-y-8 ">
+    <div className="relative left-2 flex flex-col space-y-8 text-left">
       <p>
         My name is Brayden Wong, and I&apos;m a{` `}
         <span className="font-semibold italic text-teal-400/80">
