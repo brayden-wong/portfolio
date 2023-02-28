@@ -30,13 +30,13 @@ export const Contact = () => {
   return (
     <div
       className="relative flex h-screen max-w-7xl flex-col items-center
-      justify-evenly px-4 text-center text-white sm:px-10 md:flex-row md:text-left"
+      justify-center px-4 text-center text-white sm:px-10 md:flex-row md:text-left"
     >
-      <h3 className="absolute top-4 py-1.5 text-2xl uppercase tracking-[20px] text-gray-500 md:top-24">
+      <h3 className="absolute top-2 py-1.5 text-2xl uppercase tracking-[20px] text-gray-500 md:top-24">
         Contact
       </h3>
 
-      <div className="flex flex-col space-y-8">
+      <div className="flex flex-col space-y-4">
         <h4 className="py-1.5 text-center text-4xl font-semibold">
           I have got just what you need.{' '}
           <span className="underline decoration-teal-400">Let&apos;s Talk</span>
